@@ -12,6 +12,8 @@ RAIZ = Path(__file__).resolve().parent
 SAIDA = RAIZ / "site"
 FOTOS = RAIZ / "fotos"
 LARGURAS = [640, 1024, 1600, 2400]
+# Prefixo dos endereços: "/" no domínio próprio; "/maira-site/" no endereço provisório do GitHub.
+BASE = "/" + os.environ.get("BASE", "/").strip("/") + "/" if os.environ.get("BASE", "/").strip("/") else "/"
 
 args = sys.argv[1:]
 PREVIA = None
@@ -56,7 +58,7 @@ class Pag:
 def link(atual, destino_arquivo, destino_url, ancora=""):
     if PREVIA:
         return atual.rel() + destino_arquivo + ancora
-    return destino_url + ancora
+    return BASE.rstrip("/") + destino_url + ancora
 
 
 def L(atual, nome, extra=""):
@@ -71,7 +73,7 @@ def L(atual, nome, extra=""):
         return link(atual, f"projects/{slug}.html", f"/projects/{slug}")
     a, u = mapa[nome]
     if extra:
-        return (atual.rel() + a + extra) if PREVIA else (u + extra)
+        return (atual.rel() + a + extra) if PREVIA else (BASE.rstrip('/') + u + extra)
     return link(atual, a, u)
 
 
@@ -80,7 +82,7 @@ def ativo(atual, nome):
 
 
 def asset(atual, caminho):
-    return (atual.rel() if PREVIA else "/") + caminho
+    return (atual.rel() if PREVIA else BASE) + caminho
 
 
 # ---------- fotos ----------
