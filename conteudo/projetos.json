@@ -620,7 +620,7 @@
         "h": 5227
       }
     ],
-    "publicado": false
+    "publicado": true
   },
   {
     "slug": "leonardo-70",
@@ -693,7 +693,7 @@
         "h": 3675
       }
     ],
-    "publicado": false
+    "publicado": true
   },
   {
     "slug": "casamento-naia-e-brunno",
@@ -758,7 +758,7 @@
         "h": 3600
       }
     ],
-    "publicado": false
+    "publicado": true
   },
   {
     "slug": "casamento-cydney-e-guilherme",
@@ -839,7 +839,7 @@
         "h": 3683
       }
     ],
-    "publicado": false
+    "publicado": true
   },
   {
     "slug": "casamento-juliana-e-adriano",
@@ -916,7 +916,7 @@
         "h": 5760
       }
     ],
-    "publicado": false
+    "publicado": true
   },
   {
     "slug": "casamento-camila-e-paulo",
@@ -985,7 +985,7 @@
         "h": 2400
       }
     ],
-    "publicado": false
+    "publicado": true
   },
   {
     "slug": "casamento-maria-clara-e-gabriel",
@@ -1078,6 +1078,6 @@
         "h": 3754
       }
     ],
-    "publicado": false
+    "publicado": true
   }
 ]
