@@ -293,19 +293,22 @@ def projetos():
 
 
 def fileiras(atual, fotos):
-    """Horizontal ocupa a largura; duas verticais seguidas viram um par; vertical sozinha fica centralizada."""
-    out, i = [], 0
-    while i < len(fotos):
-        f = fotos[i]
+    """Horizontal ocupa a largura. Verticais sempre em par, lado a lado: uma vertical espera a próxima,
+    mesmo que haja horizontais entre elas. Só a última, se sobrar sozinha, fica centralizada."""
+    out, espera = [], None
+    for f in fotos:
         if f["w"] > f["h"]:
             out.append(f'<div class="fileira larga">{foto(atual, f["id"], sizes="100vw")}</div>')
-            i += 1
-        elif i + 1 < len(fotos) and fotos[i + 1]["w"] <= fotos[i + 1]["h"]:
-            out.append(f'<div class="fileira par">{foto(atual, f["id"], sizes="50vw")}{foto(atual, fotos[i+1]["id"], sizes="50vw")}</div>')
-            i += 2
+        elif espera is None:
+            espera = (len(out), f)
+            out.append(None)
         else:
-            out.append(f'<div class="fileira so">{foto(atual, f["id"], sizes="(max-width:760px) 100vw, 640px")}</div>')
-            i += 1
+            i, v = espera
+            out[i] = f'<div class="fileira par">{foto(atual, v["id"], sizes="50vw")}{foto(atual, f["id"], sizes="50vw")}</div>'
+            espera = None
+    if espera:
+        i, v = espera
+        out[i] = f'<div class="fileira so">{foto(atual, v["id"], sizes="(max-width:760px) 100vw, 640px")}</div>'
     return out
 
 
