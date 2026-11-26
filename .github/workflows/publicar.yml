@@ -37,10 +37,7 @@ jobs:
           git add fotos
           git diff --cached --quiet || (git commit -m "Fotos do site" && git push)
 
-      # Enquanto o site está no endereço provisório (github.io/maira-site). Ao ligar o domínio mairapreto.com.br, apagar as duas linhas "env" e "BASE".
       - name: Gerar páginas
-        env:
-          BASE: /maira-site/
         run: python build.py
 
       - uses: actions/upload-pages-artifact@v3
