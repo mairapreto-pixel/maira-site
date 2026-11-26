@@ -1,0 +1,81 @@
+{
+  "dominio": "https://mairapreto.com.br",
+  "nome": "Maíra Preto",
+  "assinatura": "Fotógrafa & Diretora de Arte",
+  "lema": "Tempo, Luz e Presença.",
+  "descricao_google": "Fotografia autoral, direção de arte e narrativa editorial para casamentos, festas e conteúdos.",
+  "email": "mairapreto@me.com",
+  "whatsapp_numero": "5511999889033",
+  "whatsapp_exibido": "+55 11 99988-9033",
+  "whatsapp_mensagem": "Olá, gostaria de consultar disponibilidade para meu evento.",
+  "local": "São Paulo · Brasil · Worldwide",
+  "instagram": "https://www.instagram.com/mairapretophoto",
+  "linkedin": "https://www.linkedin.com/in/maira-preto-7b7506420/",
+  "revista_nou": "https://www.revistanou.com.br/",
+  "revista_nou_instagram": "https://www.instagram.com/revistanou/",
+
+  "home": {
+    "abertura": {"cena": "wrJduTNmdhfBlbgsc3gp9nQr31s", "detalhe": "BiSqrmkGVniSNmTc3vQ2hLsKk0"},
+    "frase": "Registros autorais para celebrações e marcas que constroem patrimônio estético.",
+    "destaques_linha1": [
+      {"projeto": "casamento-ana-e-gabriel", "foto": "38bA1FU42M0P5H2iFOfUMaxrs"},
+      {"projeto": "casamento-pri-e-dudu", "foto": "t7R7pUCoGSZq3cIz4Obb3ChwO2Q"},
+      {"projeto": "silvia-55", "foto": "QGPKannCg6W0AaSA0KxapaGyksc"}
+    ],
+    "destaques_linha2": [
+      {"projeto": "editorial-spring-fever", "foto": "xuevkQDboRsPkqXMqUabmaiU"},
+      {"projeto": "casamento-giovanna-e-gabriel", "foto": "FDBmtJSO5FrZZbFq5IekWsH9TYs"}
+    ],
+    "servicos": [
+      {"nome": "Casamentos", "texto": "As pessoas, os encontros e tudo o que torna cada história única. Atmosfera, arquitetura e os momentos que acontecem naturalmente.", "link": "Casamentos"},
+      {"nome": "Festas", "texto": "Os encontros e os pequenos detalhes que fazem uma celebração ser o que ela é, guardados para serem revisitados no tempo.", "link": "Festas"},
+      {"nome": "Marcas & Conteúdo", "texto": "Um olhar editorial para valorizar sua marca e construir um acervo visual consistente e reconhecível.", "link": "Atmosfera"}
+    ],
+    "sobre_foto": "Amz9FahQ4GFF7OA1pz2U4Mm3hg",
+    "sobre_frase": "Fotografar uma celebração não é transformá-la em uma sessão de fotos. É estar presente com precisão."
+  },
+
+  "projetos_pagina": {
+    "subtitulo": "O olhar que desacelera o tempo.",
+    "categorias": ["Casamentos", "Festas", "Atmosfera"]
+  },
+
+  "sobre": {
+    "titulo": "Fotógrafa & Diretora de Arte.",
+    "foto_abertura": "s2XOgECmlA7jHCe1pbC45riFau4",
+    "retrato": "Amz9FahQ4GFF7OA1pz2U4Mm3hg",
+    "fotos_extra": ["fvzLpxyrbcsyiJozC09zhTLlU", "OXsASC8jwe0q3hOQt0vXlII1U"],
+    "secoes": [
+      {"titulo": "Sobre", "paragrafos": [
+        "Atuo entre fotografia, direção de arte e projetos editoriais, criando imagens que combinam atenção aos detalhes, narrativa e uma estética própria.",
+        "Ao longo dos anos, esse olhar também se expandiu para projetos editoriais — entre eles, a criação da Revista NOU."]},
+      {"titulo": "Filosofia", "paragrafos": [
+        "Acredito na fotografia como um exercício de presença e escuta. O meu trabalho busca a tensão poética entre a luz natural, a arquitetura do espaço e a verdade dos encontros espontâneos.",
+        "Sem excessos ou poses artificiais, o foco permanece na composição precisa, na sofisticação dos detalhes e no registro de memórias que atravessam o tempo com a mesma força e elegância.",
+        "Atuação disponível para projetos editoriais, grandes eventos e coberturas especiais em São Paulo e internacionalmente."]},
+      {"titulo": "Atuação & Publicações", "itens": [
+        ["Casamentos & Festas", "Fotografia & Direção de Arte"],
+        ["Projetos Editoriais", "Curadoria & Fotografia"],
+        ["Revista NOU", "Fundadora & Diretora Criativa"]]},
+      {"titulo": "Projeto — Revista NOU", "paragrafos": [
+        "Em 2026, esse olhar ganhou uma nova forma com a criação da Revista NOU, uma publicação independente dedicada à cultura estética contemporânea brasileira.",
+        "A NOU nasce do interesse por como habitamos, recebemos e celebramos — e pelas relações entre arquitetura, arte, design, cultura e os encontros que acontecem nesses espaços.",
+        "Como fundadora e diretora criativa, participo da construção de sua linguagem, da curadoria à direção visual e editorial.",
+        "A revista é, para mim, uma extensão natural do trabalho com imagem: um espaço para pesquisar, selecionar, editar e construir narrativas visuais com identidade própria."]}
+    ]
+  },
+
+  "contato": {
+    "foto": "FqV0M5g0hoBgwhk7iiukX40Bw5M",
+    "titulo": "Vamos conversar sobre o seu encontro",
+    "texto": "Conte a data, o lugar e o que imagina. A resposta vem pessoalmente."
+  },
+
+  "fotos_paginas": {
+    "s2XOgECmlA7jHCe1pbC45riFau4": {"ext": "jpg", "w": 5760, "h": 3840, "alt": "Carrossel iluminado à noite"},
+    "Amz9FahQ4GFF7OA1pz2U4Mm3hg": {"ext": "jpeg", "w": 3120, "h": 4160, "alt": "Maíra Preto fotografando"},
+    "fvzLpxyrbcsyiJozC09zhTLlU": {"ext": "jpg", "w": 1920, "h": 2400, "alt": "Fotografia de Maíra Preto"},
+    "OXsASC8jwe0q3hOQt0vXlII1U": {"ext": "jpg", "w": 2400, "h": 1600, "alt": "Fotografia de Maíra Preto"},
+    "FqV0M5g0hoBgwhk7iiukX40Bw5M": {"ext": "jpg", "w": 3763, "h": 5645, "alt": "Fotografia de Maíra Preto"}
+  }
+}

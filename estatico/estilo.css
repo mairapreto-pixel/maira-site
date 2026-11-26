@@ -1,0 +1,177 @@
+/* Maíra Preto · Fotografia & Direção de Arte */
+:root{
+  --papel:#FBF8F2; --linho:#EDE2CC; --areia:#D9CDB6; --areia2:#B9A684;
+  --tinta:#1A1814; --tinta2:#3F3A32; --tinta3:#5E574C;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Inter',system-ui,-apple-system,sans-serif;
+  --mono:'Geist Mono',ui-monospace,monospace;
+  --margem:clamp(20px,5vw,72px);
+  --vao:clamp(12px,2vw,28px);
+  --secao:clamp(96px,10vw,144px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-rendering:optimizeLegibility}
+body{margin:0;background:var(--papel);color:var(--tinta);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--tinta3)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--tinta);outline-offset:3px}
+h1,h2,h3,p,dl,dd{margin:0}
+.wrap{max-width:1440px;margin:0 auto;padding-left:var(--margem);padding-right:var(--margem)}
+.disp{font-family:var(--serif);font-weight:400}
+.mono{font-family:var(--mono);font-weight:500;text-transform:uppercase;letter-spacing:.02em}
+.sub{color:var(--tinta2)}
+.sublinha{border-bottom:1px solid var(--tinta);padding-bottom:3px}
+.pular{position:absolute;left:-9999px}
+.pular:focus{left:16px;top:16px;background:var(--papel);padding:8px 12px;z-index:10}
+
+/* Fotos */
+.foto{background:var(--linho);overflow:hidden}
+.foto img{width:100%;height:100%;object-fit:cover}
+.foto.vazia{display:flex;align-items:center;justify-content:center;color:var(--tinta3);font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.04em}
+
+/* Botões */
+.botao{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border:1px solid var(--tinta);font-family:var(--mono);font-weight:500;text-transform:uppercase;letter-spacing:.02em;font-size:13px;background:none;color:var(--tinta);cursor:pointer}
+.botao.cheio{background:var(--tinta);color:var(--papel)}
+.botao.cheio:hover{color:var(--linho)}
+.botao.grande{min-height:52px;padding:0 26px}
+.botao.ativo{background:var(--tinta);color:var(--papel)}
+
+/* Cabeçalho */
+.topo{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;padding-top:28px;padding-bottom:32px}
+.topo .logo img{width:136px;height:136px}
+.topo nav{display:flex;align-items:center;gap:32px;font-size:14px}
+.topo nav a[aria-current="page"]{border-bottom:1px solid var(--tinta);padding-bottom:2px}
+
+/* Seções comuns */
+.titulo-secao{font-size:clamp(40px,4.4vw,64px);line-height:1}
+.cabeca{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:12px 24px;border-top:1px solid var(--tinta);padding-top:20px;margin-bottom:28px}
+.legenda{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;padding-top:12px}
+.legenda .nome{font-family:var(--serif);font-size:24px;line-height:1.2}
+.legenda .cat{font-size:11px;color:var(--tinta2)}
+
+/* Home */
+.abertura{display:grid;grid-template-columns:3fr 1fr;gap:var(--vao)}
+.abertura .cena{aspect-ratio:16/9}
+.abertura .cena img{object-position:30% 40%}
+.abertura-legenda{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-top:14px;font-size:12px;color:var(--tinta2)}
+.lema{display:flex;justify-content:space-between;align-items:flex-end;gap:28px 64px;padding-top:clamp(80px,9vw,128px);padding-bottom:clamp(80px,9vw,128px)}
+.lema h1{font-size:clamp(64px,11.5vw,176px);line-height:.9;letter-spacing:-.025em}
+.lema p{max-width:340px;margin-bottom:12px;font-size:17px;color:var(--tinta2)}
+.g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--vao)}
+.g3 .foto{aspect-ratio:4/5}
+.g2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--vao);margin-top:clamp(40px,4vw,56px)}
+.g2 .foto{aspect-ratio:3/2}
+.servicos{padding-top:var(--secao)}
+.servicos .cabeca-s{border-bottom:1px solid var(--tinta);padding-bottom:20px}
+.servico{display:grid;grid-template-columns:1.1fr 1.6fr 190px;gap:12px 40px;align-items:baseline;padding:26px 0;border-bottom:1px solid var(--tinta)}
+.servico .nome{font-family:var(--serif);font-size:clamp(30px,3vw,42px);line-height:1.05}
+.servico .texto{color:var(--tinta2)}
+.servico .ir{font-size:12px}
+.sobre-curto{padding-top:var(--secao);display:flex;flex-wrap:wrap;gap:clamp(28px,6vw,96px);align-items:flex-end}
+.sobre-curto .foto{flex:1 1 280px;max-width:380px;aspect-ratio:4/5}
+.sobre-curto .txt{flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:20px;padding-bottom:6px}
+.sobre-curto .frase{font-size:clamp(30px,3.2vw,46px);line-height:1.15;max-width:680px}
+
+/* Contato (faixa) */
+.faixa{margin-top:var(--secao);background:var(--linho);padding:clamp(72px,8vw,112px) var(--margem)}
+.faixa .dentro{max-width:1296px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px 48px}
+.faixa h2{font-size:clamp(44px,6vw,92px);line-height:.95;letter-spacing:-.02em}
+.acoes{display:flex;flex-wrap:wrap;gap:12px}
+.minusculo{text-transform:none}
+
+/* Rodapé */
+.rodape{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px 32px;padding-top:36px;padding-bottom:36px;font-size:12px;color:var(--tinta2)}
+.rodape .links{display:flex;flex-wrap:wrap;gap:10px 24px}
+
+/* Página de projetos */
+.abre{padding-top:clamp(56px,7vw,104px);padding-bottom:clamp(40px,4vw,56px)}
+.abre h1{font-size:clamp(52px,7vw,112px);line-height:.95;letter-spacing:-.02em}
+.abre .sub{margin-top:16px;font-size:17px}
+.filtros{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px}
+.lista{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px var(--vao)}
+.lista .foto{aspect-ratio:4/5}
+.lista .card[hidden]{display:none}
+
+/* Página de um projeto */
+.trilha{font-size:13px;color:var(--tinta2);margin-bottom:22px}
+.projeto-abre h1{max-width:1060px;font-size:clamp(40px,5.2vw,80px);line-height:1.04;letter-spacing:-.01em}
+.fileira{display:grid;gap:var(--vao)}
+.fileira.par{grid-template-columns:1fr 1fr}
+.fileira.par .foto{aspect-ratio:2/3}
+.fileira.larga .foto{aspect-ratio:3/2}
+.fileira.so{justify-items:center}
+.fileira.so .foto{width:min(100%,640px);aspect-ratio:2/3}
+.sequencia{display:flex;flex-direction:column;gap:clamp(40px,6vw,96px)}
+.dados{padding-top:clamp(72px,8vw,112px);padding-bottom:clamp(72px,8vw,112px);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.dados dt{font-size:11px;color:var(--tinta2)}
+.dados dd{font-family:var(--serif);font-size:24px;line-height:1.2;margin-top:6px}
+.texto-projeto{max-width:720px;font-size:18px;line-height:1.75;color:var(--tinta2);margin:0 0 clamp(72px,8vw,112px)}
+.ficha{padding-top:var(--secao);display:grid;grid-template-columns:1fr 1.6fr;gap:32px 64px}
+.ficha .linha{border-top:1px solid var(--tinta);grid-column:1/-1}
+.ficha dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px 40px}
+.ficha dt{font-size:11px;color:var(--tinta2)}
+.ficha dd{margin-top:4px}
+.proximo{padding-top:var(--secao)}
+.proximo .fotos{display:grid;grid-template-columns:2fr 3fr;gap:var(--vao)}
+.proximo .fotos .foto{aspect-ratio:4/5}
+.proximo .fotos .foto:last-child{aspect-ratio:auto}
+
+/* Sobre */
+.sobre-abre{padding-top:clamp(56px,7vw,104px);padding-bottom:clamp(40px,5vw,72px)}
+.sobre-abre h1{font-size:clamp(52px,8vw,128px);line-height:.92;letter-spacing:-.02em;max-width:1100px}
+.largura-total{aspect-ratio:21/9}
+.bloco{display:grid;grid-template-columns:1fr 1.6fr;gap:24px 64px;padding-top:clamp(72px,8vw,112px)}
+.bloco h2{font-size:clamp(32px,3.4vw,48px);line-height:1.05}
+.bloco .corpo{display:flex;flex-direction:column;gap:18px;font-size:17px;line-height:1.75;color:var(--tinta2);max-width:720px}
+.bloco .citacao{font-family:var(--serif);font-size:clamp(24px,2.4vw,32px);line-height:1.3;color:var(--tinta)}
+.itens{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;border-top:1px solid var(--tinta);padding-top:20px}
+.itens .nome{font-family:var(--serif);font-size:24px;line-height:1.2;color:var(--tinta)}
+.itens .papel{font-size:11px;color:var(--tinta2);margin-top:6px}
+.dupla{display:grid;grid-template-columns:2fr 3fr;gap:var(--vao);padding-top:clamp(72px,8vw,112px)}
+.dupla .foto{aspect-ratio:4/5}
+.dupla .foto:last-child{aspect-ratio:auto}
+
+/* Contato (página) */
+.contato{display:grid;grid-template-columns:3fr 2fr;gap:clamp(32px,6vw,96px);align-items:end;padding-top:clamp(56px,7vw,104px)}
+.contato h1{font-size:clamp(52px,8vw,128px);line-height:.92;letter-spacing:-.02em}
+.contato .lista-contato{margin-top:40px;border-top:1px solid var(--tinta)}
+.contato .item{display:grid;grid-template-columns:140px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--tinta);align-items:baseline}
+.contato .item .rot{font-size:11px;color:var(--tinta2)}
+.contato .item .val{font-family:var(--serif);font-size:clamp(22px,2.2vw,30px);line-height:1.2}
+.contato .foto{aspect-ratio:2/3}
+
+/* Celular e tablet */
+@media (max-width:900px){
+  .lista{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .dados{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .itens{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  .topo{align-items:center;padding-top:20px;padding-bottom:20px}
+  .topo .logo img{width:84px;height:84px}
+  .topo nav{gap:18px;font-size:12px}
+  .topo nav .botao{min-height:36px;padding:0 12px;font-size:12px}
+  .esconde-cel{display:none}
+  .abertura{grid-template-columns:2fr 1fr}
+  .abertura .cena{aspect-ratio:4/5}
+  .lema{flex-direction:column;align-items:flex-start}
+  .g3{grid-template-columns:1fr 1fr}
+  .g3 .card:last-child{grid-column:span 2}
+  .g3 .card:last-child .foto{aspect-ratio:3/2}
+  .g2{grid-template-columns:1fr}
+  .servico{grid-template-columns:1fr}
+  .ficha,.bloco,.contato{grid-template-columns:1fr}
+  .proximo .fotos,.dupla{grid-template-columns:1fr 1fr}
+  .contato .item{grid-template-columns:1fr;gap:4px}
+  .largura-total{aspect-ratio:4/3}
+}
+@media (max-width:520px){
+  .lista{gap:32px 10px}
+  .legenda .nome{font-size:20px}
+  .fileira.par{gap:8px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .foto img{transition:opacity .5s ease}
+  .card:hover .foto img{opacity:.92}
+}
